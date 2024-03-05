@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 
-const RollDice = ({ currentDice,rollDice }) => {
-  
+const RollDice = ({ currentDice, rollDice }) => {
   return (
     <Roll>
       <div onClick={rollDice}>
@@ -29,5 +28,11 @@ const Roll = styled.div`
   p {
     font-size: 24px;
     font-weight: 500;
+  }
+  @media screen and (max-width: 560px) {
+    img {
+      width: 200px;
+      height: 200px;
+    }
   }
 `;
